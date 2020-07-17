@@ -13,7 +13,7 @@ body {
   margin: auto;
 }
 
-.img {
+img {
   max-width: 100%;
 }
 
@@ -499,7 +499,7 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
-  .navbar .logo {
+  .logo {
     width: 132px;
   }
   .search__input {
@@ -509,7 +509,7 @@ template {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 576px;
+    max-width: 500px;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
@@ -543,8 +543,26 @@ template {
 }
 
 @media (max-width: 576px) {
+  .container {
+    max-width: 400px;
+  }
   .logo {
     width: 99px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    max-width: 290px;
+  }
+  .logo {
+    width: 99px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 280px;
   }
 }
 /*# sourceMappingURL=style.css.map */
