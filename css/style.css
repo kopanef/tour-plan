@@ -595,7 +595,6 @@ template {
 .swiper-container {
   width: 100%;
   height: 450px;
-  position: relative;
   border-radius: 8px;
 }
 
@@ -614,15 +613,16 @@ template {
 }
 
 .slider {
-  position: absolute;
-  widows: 728px;
+  position: relative;
+  width: 728px;
 }
 
 .slider-button {
+  position: absolute;
   z-index: 99;
   top: 50%;
-  -webkit-transform: translate(Y) -15%;
-          transform: translate(Y) -15%;
+  -webkit-transform: translate(Y) -50%;
+          transform: translate(Y) -50%;
   width: 30px;
   height: 30px;
   border: none;
@@ -638,12 +638,14 @@ template {
   background-size: 10px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 10px;
 }
 
-.slider-button--next--prev {
+.slider-button--prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (max-width: 1200px) {
