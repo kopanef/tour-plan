@@ -3,7 +3,7 @@ var mySwiper = new Swiper('.swiper-container', {
 	loop: true,
 
 
-	// Navigation arrows
+	// Navigation arrowss
 	navigation: {
 		nextEl: '.slider-button--next',
 		prevEl: '.slider-button--prev',
