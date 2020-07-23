@@ -24,8 +24,8 @@ var reviewsSlider = new Swiper('.reviews-slider', {
 
 	// Navigation arrows
 	navigation: {
-		nextEl: 'reviews-slider__button--next',
-		prevEl: 'reviews-slider__button--prev',
+		nextEl: '.reviews-slider__button--next',
+		prevEl: '.reviews-slider__button--prev',
 	},
 
 })

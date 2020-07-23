@@ -945,7 +945,7 @@ template {
   background-repeat: no-repeat;
 }
 
-.reviews-slider__item__button {
+.reviews-slider__button {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -961,12 +961,12 @@ template {
   z-index: 99;
 }
 
-.reviews-slider__item__button--prev {
+.reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-secondary.svg);
   left: 0;
 }
 
-.reviews-slider__item__button--next {
+.reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
   right: 0;
 }
