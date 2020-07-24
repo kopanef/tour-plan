@@ -13,6 +13,14 @@
 		width: 230px
 		height: 230px
 
+	.other-packages
+		&-grid
+			grid-gap: 20px
+
+	.big-card
+		&__paragraph
+			font-size: 14px
+
 @media (max-width: 992px)
 	.container, .newsletter-wrapper
 		max-width: 700px
@@ -58,6 +66,25 @@
 	.card
 		width: 340px
 		height: 230px
+
+	.other-packages
+		&__item
+			&:nth-child(1)
+				grid-column: 1 / 5
+				grid-row: 1 / 2
+			&:nth-child(2)
+				display: none
+
+	.small-card
+		&__buy-wrapper
+			flex-direction: column
+			align-items: flex-start
+		&__cost-wrapper
+			margin-bottom: 20px
+		&__price
+			font-size: 24px
+		&__button
+			width: 100%
 
 @media (max-width: 768px)
 	.container
@@ -142,6 +169,91 @@
 		width: 48%
 		height: 255px
 
+	.other-packages
+		&-grid
+			grid-template-columns: 50% 50%
+			grid-template-rows: 420px 420px
+			grid-gap: 10px
+		&__item
+			&:nth-child(1)
+				grid-column: 1 / 2
+				grid-row: 1 / 2
+			&:nth-child(2)
+				display: none
+			&:nth-child(3)
+				grid-column: 1 / 2
+				grid-row: 2 / 3
+			&:nth-child(4)
+				grid-column: 2 / 3
+				grid-row: 2 / 3
+			&:nth-child(5)
+				grid-column: 2 / 3
+				grid-row: 1 / 2
+
+	.big-card
+		flex-direction: column
+		&__paragraph
+			display: none
+		&__list-text
+			font-size: 12px
+		&__stars
+			display: none
+		&__offer
+			font-size: 10px
+		&__image-container
+			justify-content: center
+			width: 100%
+			height: 50%
+			flex-basis: 50%
+		&__info-container
+			padding: 10px 20px 15px 15px
+			width: 100%
+			flex-basis: 100%
+		&__buy-wrapper
+			flex-direction: column
+			align-items: flex-start
+		&__cost-wrapper
+			margin-bottom: 20px
+			flex-direction: row-reverse
+			align-items: center
+		&__list
+			margin-bottom: 10px
+		&__old-price
+			font-size: 12px
+		&__price
+			font-size: 20px
+			margin-right: 10px
+		&__button
+			width: 100%
+		&__list-text
+			font-size: 12px
+		&__title
+			margin-bottom: 10px
+
+	.small-card
+		&__info-container
+			padding: 10px 20px 15px 15px
+		&__buy-wrapper
+			flex-direction: column
+			align-items: flex-start
+		&__cost-wrapper
+			margin-bottom: 20px
+			flex-direction: row-reverse
+			align-items: center
+		&__list
+			margin-bottom: 10px
+		&__old-price
+			font-size: 12px
+		&__price
+			font-size: 20px
+			margin-right: 10px
+		&__button
+			width: 100%
+		&__list-text
+			font-size: 12px
+		&__title
+			margin-bottom: 10px
+
 @media (max-width: 576px)
 	.container
 		max-width: 400px
@@ -160,6 +272,27 @@
 		width: 100%
 	.card
 		width: 100%
+
+	.other-packages
+		&-grid
+			grid-template-columns: 100%
+			grid-template-rows: 450px 450px 450px 450px
+			grid-gap: 20px
+		&__item
+			&:nth-child(1)
+				grid-column: 1 / 2
+				grid-row: 1 / 2
+			&:nth-child(2)
+				display: none
+			&:nth-child(3)
+				grid-column: 1 / 2
+				grid-row: 2 / 3
+			&:nth-child(4)
+				grid-column: 1/ 2
+				grid-row: 3 / 4
+			&:nth-child(5)
+				grid-column: 1 / 2
+				grid-row: 4 / 5
 
 @media (max-width: 420px)
 	.container
