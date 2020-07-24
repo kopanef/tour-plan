@@ -48,6 +48,8 @@ var reviewsSlider = new Swiper('.reviews-slider', {
 
 
 
+
+
 ymaps.ready(init);
 
 function init() {
