@@ -95,6 +95,11 @@
 		&__button
 			width: 100%
 
+	.big-card
+		&__list-icon
+			width: 15px
+			height: 15px
+
 @media (max-width: 768px)
 	.container
 		max-width: 500px
@@ -238,6 +243,7 @@
 		&__list-text
 			font-size: 12px
 		&__title
+			font-size: 16px
 			margin-bottom: 10px
 
 	.small-card
@@ -264,6 +270,7 @@
 		&__list-text
 			font-size: 12px
 		&__title
+			font-size: 16px
 			margin-bottom: 10px
 
 @media (max-width: 576px)
@@ -289,7 +296,7 @@
 	.other-packages
 		&-grid
 			grid-template-columns: 100%
-			grid-template-rows: 450px 450px 450px 450px
+			grid-template-rows: 250px 250px 250px 250px
 			grid-gap: 20px
 			margin-bottom: 50px
 		&__item
@@ -308,10 +315,22 @@
 				grid-column: 1 / 2
 				grid-row: 4 / 5
 		.small-card
+			flex-direction: row
 			&__image-container
-				height: 40%
+				height: 100%
+				width: 40%
 			&__image
 				width: 100%
+	.big-card
+		flex-direction: row
+		&__image-container
+			width: 40%
+			height: 100%
+		&__info-container
+			width: 60%
+		&__image
+			width: 100%
+			height: 100%
 
 @media (max-width: 420px)
 	.container
