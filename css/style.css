@@ -433,6 +433,12 @@ template {
   margin-left: 108px;
 }
 
+.navbar__search--mobile--visible {
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 39px;
+}
+
 .navbar-bottom {
   background-color: #0A223D;
 }
@@ -485,7 +491,7 @@ template {
 }
 
 .search__input {
-  width: 350px;
+  width: 340px;
   height: 100%;
   padding-left: 23px;
   padding-right: 75px;
@@ -2086,6 +2092,9 @@ template {
   }
   .container {
     max-width: 500px;
+  }
+  .navbar__search {
+    margin-left: 47px;
   }
   .navbar--mobile--fixed {
     position: fixed;
