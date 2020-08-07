@@ -18,19 +18,20 @@
   <header class="navbar navbar--mobile--fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo" data-aos="fade-right" data-aos-delay="300">
+        <a href="#" class="logo">
+          <!-- data-aos="fade-right" data-aos-delay="300" -->
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour plan" class="logo__image" />
         </a>
-
-        <form data-aos="fade-right" data-aos-delay="200" action="send.php" method="POST"
-          class="search navbar__search navbar__search--mobile--hidden">
+        <!-- data-aos="fade-right" data-aos-delay="200" -->
+        <form action="send.php" method="POST" class="search navbar__search navbar__search--mobile--hidden">
           <input type="text" class="search__input" placeholder="Search Location" />
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search" />
           </button>
         </form>
 
-        <a href="#" class="user navbar__user navbar__user--mobile--hidden" data-aos="fade-right" data-aos-delay="300">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <!-- data-aos="fade-right" data-aos-delay="300" -->
           <img src="img/user-avatar.jpeg" alt="Avatar: Nathan" class="avatar user__avatar" />
           <span class="user__name">Nathan</span>
         </a>
@@ -805,8 +806,10 @@ trip - full day" class="card__image" />
         <input type="tel" class="input modal__input" placeholder="Your phone" name="tel" required />
         <input type="email" class="input modal__input" placeholder="Your Email" name="email" required />
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
-        <button class="button modal__button" type="submit">Send</button>
-        <div class="modal-info">* Required Fields</div>
+        <div class="modal__button-wrapper">
+          <button class="button modal__button" type="submit">Send</button>
+          <div class="modal-info">* Required Fields</div>
+        </div>
       </form>
     </div>
     <!-- /.modal__dialog -->
