@@ -9,9 +9,11 @@
 			font-size: 10px
 			line-height: 13px
 			&:not(:last-child)
-				&::after
+				&:after
 					content: "/"
 					margin-right: 4px
+				&:hover
+					color: $dark
 		&__link
 			text-decoration: none
 			color: inherit

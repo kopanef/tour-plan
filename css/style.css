@@ -18,6 +18,11 @@ img {
   max-width: 100%;
 }
 
+input,
+textarea {
+  outline: none;
+}
+
 .input {
   background-color: #fff;
   border-radius: 4px;
@@ -46,7 +51,11 @@ img {
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
+  cursor: pointe;
+}
+
+.button:hover {
+  background-color: #FF345B;
 }
 
 .invalid {
@@ -453,6 +462,10 @@ template {
   line-height: 18px;
 }
 
+.navbar-menu__link:hover {
+  text-decoration: underline;
+}
+
 .navbar__item--mobile--visible {
   display: none;
 }
@@ -491,6 +504,10 @@ template {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+}
+
+.search__button:hover {
+  background-color: #FF345B;
 }
 
 .user {
@@ -539,9 +556,13 @@ template {
   line-height: 13px;
 }
 
-.breadcrumb-list__item:not(:last-child)::after {
+.breadcrumb-list__item:not(:last-child):after {
   content: "/";
   margin-right: 4px;
+}
+
+.breadcrumb-list__item:not(:last-child):hover {
+  color: #0A223D;
 }
 
 .breadcrumb-list__link {
@@ -677,7 +698,7 @@ template {
   background-color: transparent;
 }
 
-.hotel-slider--next {
+.hotel-slider__button--next {
   right: 18px;
   background-image: url(../img/arrow-next.svg);
   background-repeat: no-repeat;
@@ -685,7 +706,7 @@ template {
   background-size: 10px;
 }
 
-.hotel-slider--prev {
+.hotel-slider__button--prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
   background-size: 10px;
@@ -828,6 +849,10 @@ template {
   margin-left: 8px;
 }
 
+.booking__num:hover {
+  text-decoration: underline;
+}
+
 .booking__button {
   width: 100%;
   min-height: 45px;
@@ -963,6 +988,10 @@ template {
   cursor: pointer;
 }
 
+.small-card__button:hover {
+  background-color: #FF345B;
+}
+
 .small-card__buy-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1092,6 +1121,10 @@ template {
   border: none;
   color: #ffffff;
   cursor: pointer;
+}
+
+.big-card__button:hover {
+  background-color: #FF345B;
 }
 
 .big-card__buy-wrapper {
@@ -1277,7 +1310,15 @@ template {
   height: 100%;
   border: none;
   background-color: #EC1F46;
-  color: #D9D9D9;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.subscribe__button:hover {
+  background-color: #FF345B;
 }
 
 .reviews {
@@ -1509,6 +1550,10 @@ template {
   cursor: pointer;
 }
 
+.card__button:hover {
+  background-color: #FF345B;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
@@ -1705,9 +1750,27 @@ template {
   margin-bottom: 20px;
 }
 
+.footer__tel-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__tel-link:hover {
+  text-decoration: underline;
+}
+
 .footer__link {
   text-decoration: none;
   color: inherit;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__link-img:hover {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
 }
 
 .footer__title {
@@ -1747,12 +1810,76 @@ template {
   height: 123px;
 }
 
-.footer__info {
+.footer-info {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+}
+
+.footer__button {
+  cursor: pointer;
+}
+
+.footer__email {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__email:hover {
+  text-decoration: underline;
+}
+
+.under-footer {
+  background-color: #0A223D;
+}
+
+.under-footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 46px 0 46px 0;
+}
+
+.under-footer__documents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 283px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 30%;
+}
+
+.under-footer__documents-item {
+  text-decoration: none;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.under-footer__documents-item:hover {
+  text-decoration: underline;
+}
+
+.under-footer__payment {
+  width: 136px;
+}
+
+.under-footer__payment-img {
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -1801,7 +1928,7 @@ template {
     line-height: 15px;
   }
   .logo {
-    width: 132px;
+    width: 120px;
   }
   .search__input {
     width: 340px;
@@ -1839,6 +1966,11 @@ template {
         -ms-grid-row-align: center;
         align-self: center;
   }
+  .footer__additional {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3 / 5;
+  }
   .footer__categories {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
@@ -1846,7 +1978,9 @@ template {
     grid-column: span 2;
   }
   .footer__legal {
-    grid-column: span 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-column: 5 / 7;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -1926,6 +2060,9 @@ template {
   .big-card__list-icon {
     width: 15px;
     height: 15px;
+  }
+  .under-footer__documents {
+    margin-left: 0;
   }
 }
 
@@ -2375,10 +2512,20 @@ template {
     grid-column: 1;
   }
   .footer__social-network {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -ms-grid-row: 2;
     grid-row: 2;
     -ms-grid-column: 1;
     grid-column: 1;
+  }
+  .footer__title {
+    margin-bottom: 20px;
   }
   .footer__additional {
     -ms-grid-row: 3;
@@ -2409,6 +2556,28 @@ template {
     grid-row: 7;
     -ms-grid-column: 1;
     grid-column: 1;
+  }
+  .footer__form {
+    width: 100%;
+  }
+  .under-footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 0;
+    padding-bottom: 21px;
+  }
+  .under-footer__documents {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-bottom: 10px;
   }
 }
 
