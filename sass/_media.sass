@@ -127,6 +127,9 @@
 	.under-footer
 		&__documents
 			margin-left: 0
+	.modal
+		&__dialog
+			padding: 23px 58px
 
 @media (max-width: 768px)
 	body
@@ -340,13 +343,26 @@
 	.footer
 		&__input-group
 			flex-basis: 100%
-
+	.modal
+		&__button
+			margin-right: 25px
 @media (max-width: 576px)
 	.container
 		max-width: 400px
 	.logo
 		width: 99px
-
+	.modal
+		&__dialog
+			padding: 30px 20px
+			overflow-y: scroll
+			min-width: 310px
+		&__message
+			min-height: 100px
+		&__button
+			margin-right: 10px
+			max-width: 140px
+		&__info
+			flex-basis: 97px
 	.hotel
 		&-slider
 			margin-bottom: 20px

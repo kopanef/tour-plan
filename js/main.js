@@ -37,30 +37,30 @@ $(document).ready(function () {
 	})
 
 
-	ymaps.ready(init);
+	// ymaps.ready(init);
 
-	function init() {
-		// Создание карты.
-		var myMap = new ymaps.Map("map", {
-			// Координаты центра карты.
-			// Порядок по умолчанию: «широта, долгота».
-			// Чтобы не определять координаты центра карты вручную,
-			// воспользуйтесь инструментом Определение координат.
-			center: [55.774054, 37.651793],
-			// Уровень масштабирования. Допустимые значения:
-			// от 0 (весь мир) до 19.
-			zoom: 16
-		});
-		var myGeoObject = new ymaps.GeoObject({
-			geometry: {
-				type: "Point", // тип геометрии - точка
-				coordinates: [55.774054, 37.651793] // координаты точки
-			}
-		});
+	// function init() {
+	// 	// Создание карты.
+	// 	var myMap = new ymaps.Map("map", {
+	// 		// Координаты центра карты.
+	// 		// Порядок по умолчанию: «широта, долгота».
+	// 		// Чтобы не определять координаты центра карты вручную,
+	// 		// воспользуйтесь инструментом Определение координат.
+	// 		center: [55.774054, 37.651793],
+	// 		// Уровень масштабирования. Допустимые значения:
+	// 		// от 0 (весь мир) до 19.
+	// 		zoom: 16
+	// 	});
+	// 	var myGeoObject = new ymaps.GeoObject({
+	// 		geometry: {
+	// 			type: "Point", // тип геометрии - точка
+	// 			coordinates: [55.774054, 37.651793] // координаты точки
+	// 		}
+	// 	});
 
-		var myPlacemark = new ymaps.Placemark([55.774054, 37.651793]);
-		myMap.geoObjects.add(myPlacemark);
-	}
+	// 	var myPlacemark = new ymaps.Placemark([55.774054, 37.651793]);
+	// 	myMap.geoObjects.add(myPlacemark);
+	// }
 
 	var modalButton = $("[data-toggle=modal]");
 	var closeModalButton = $(".modal__close");
@@ -100,6 +100,24 @@ $(document).ready(function () {
 				},
 			},
 		});
+	});
+	AOS.init();
+
+	$(".map__image").mouseover(function () {
+		$(".map__image").addClass("map__image--dn");
+		let map;
+
+		function initMap() {
+			var opt = {
+				center: {
+					lat: 41.011845,
+					lng: 39.615020
+				},
+				zoom: 8
+			}
+			map = new google.maps.Map(document.getElementById("map"), opt);
+		}
+		initMap();
 	});
 	AOS.init();
 });

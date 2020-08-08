@@ -3,6 +3,14 @@
           box-sizing: border-box;
 }
 
+*:hover {
+  outline: none;
+}
+
+*:active {
+  outline: none;
+}
+
 body {
   font-family: 'Mulish', sans-serif;
   color: #333333;
@@ -61,6 +69,8 @@ textarea {
 .invalid {
   color: #EC1F46;
   border-bottom: 1px solid #EC1F46;
+  position: absolute;
+  top: 5px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -885,6 +895,17 @@ template {
   overflow: hidden;
 }
 
+.map__frame {
+  width: 100%;
+  height: 210px;
+  frameborder: 0;
+  z-index: 100;
+}
+
+.map__image--dn {
+  display: none;
+}
+
 .other-packages__title {
   font-weight: bold;
   font-size: 36px;
@@ -1599,6 +1620,7 @@ template {
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  overflow: auto;
 }
 
 .modal__dialog--visible {
@@ -1625,6 +1647,17 @@ template {
   margin-top: 15px;
 }
 
+.modal__button {
+  margin-right: 25px;
+}
+
+.modal__info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 .modal__button-wrapper {
   margin-top: 15px;
   display: -webkit-box;
@@ -1636,7 +1669,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 302px;
+  max-width: 100%;
 }
 
 .modal__info {
@@ -2084,6 +2117,9 @@ template {
   .under-footer__documents {
     margin-left: 0;
   }
+  .modal__dialog {
+    padding: 23px 58px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2425,6 +2461,9 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .modal__button {
+    margin-right: 25px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2433,6 +2472,22 @@ template {
   }
   .logo {
     width: 99px;
+  }
+  .modal__dialog {
+    padding: 30px 20px;
+    overflow-y: scroll;
+    min-width: 310px;
+  }
+  .modal__message {
+    min-height: 100px;
+  }
+  .modal__button {
+    margin-right: 10px;
+    max-width: 140px;
+  }
+  .modal__info {
+    -ms-flex-preferred-size: 97px;
+        flex-basis: 97px;
   }
   .hotel-slider {
     margin-bottom: 20px;

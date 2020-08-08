@@ -12,6 +12,24 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
     rel="stylesheet">
+  <!-- Фавикон -->
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+
 </head>
 
 <body>
@@ -151,7 +169,7 @@
             </div>
 
             <div class="swiper-slide hotel-slider__item">
-              <img class="hotel-slider__image" src="img/slide-2 (1).jpg" alt="slide" />
+              <img class="hotel-slider__image" src="img/slide-2(1).jpg" alt="slide" />
             </div>
 
             <div class="swiper-slide hotel-slider__item">
@@ -209,11 +227,12 @@
           </div>
           <!-- /.booking -->
           <div id="map" class="map">
+            <img class="map__image" src="img/map.png" alt="image: Google Map">
             <!-- <iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8974.191549155095!2d37.6641184781334!3d55.78380901859595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53585de4dc5e9%3A0x73a95baaa6869a53!2sHilton%20Garden%20Inn%20Moscow%20Krasnoselskaya!5e0!3m2!1sru!2sru!4v1595344884354!5m2!1sru!2sru"
-							width="100%" height="213" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-							tabindex="0">
-						</iframe> -->
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8974.191549155095!2d37.6641184781334!3d55.78380901859595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53585de4dc5e9%3A0x73a95baaa6869a53!2sHilton%20Garden%20Inn%20Moscow%20Krasnoselskaya!5e0!3m2!1sru!2sru!4v1595344884354!5m2!1sru!2sru"
+              width="100%" height="213" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0">
+            </iframe> -->
           </div>
           <!-- /.map -->
         </div>
@@ -273,7 +292,7 @@
                 <span class="big-card__price">$ 9,500</span>
               </div>
               <!-- big-card__cost-wrapper -->
-              <button class="big-card__button">Book Now</button>
+              <button data-toggle="modal" data-href="#booking-modal" class="big-card__button">Book Now</button>
             </div>
             <!-- /.buy-wrapper -->
           </div>
@@ -310,7 +329,7 @@
                 <span class="small-card__price">$ 3,000</span>
               </div>
               <!-- small-card__cost-wrapper -->
-              <button class="small-card__button">Book Now</button>
+              <button data-toggle="modal" data-href="#booking-modal" class="small-card__button">Book Now</button>
             </div>
             <!-- /.buy-wrapper -->
           </div>
@@ -347,7 +366,7 @@
                 <span class="small-card__price">$ 9,500</span>
               </div>
               <!-- small-card__cost-wrapper -->
-              <button class="small-card__button">Book Now</button>
+              <button data-toggle="modal" data-href="#booking-modal" class="small-card__button">Book Now</button>
             </div>
             <!-- /.buy-wrapper -->
           </div>
@@ -384,7 +403,7 @@
                 <span class="small-card__price">$ 2,500</span>
               </div>
               <!-- small-card__cost-wrapper -->
-              <button class="small-card__button">Book Now</button>
+              <button data-toggle="modal" data-href="#booking-modal" class="small-card__button">Book Now</button>
             </div>
             <!-- /.buy-wrapper -->
           </div>
@@ -421,7 +440,7 @@
                 <span class="small-card__price">$ 3,500</span>
               </div>
               <!-- small-card__cost-wrapper -->
-              <button class="small-card__button">Book Now</button>
+              <button data-toggle="modal" data-href="#booking-modal" class="small-card__button">Book Now</button>
             </div>
             <!-- /.buy-wrapper -->
           </div>
@@ -600,7 +619,7 @@
           <img src="img/card-1.jpg" alt="The curious corner
 of chamarel" class="card__image" />
           <h3 class="card__title">The curious corner of chamarel</h3>
-          <button class="card__button">Book now</button>
+          <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book now</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card">
@@ -608,7 +627,7 @@ of chamarel" class="card__image" />
           <img src="img/card-2.jpg" alt="Gymkhana club golf
 course" class="card__image" />
           <h3 class="card__title">Gymkhana club golf course</h3>
-          <button class="card__button">Book now</button>
+          <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book now</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card">
@@ -616,14 +635,14 @@ course" class="card__image" />
           <img src="img/card-3.jpg" alt="Tamarind falls hiking
 trip - full day" class="card__image" />
           <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-          <button class="card__button">Book now</button>
+          <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book now</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card">
           <!-- data-aos="fade-right" data-aos-delay="700" -->
           <img src="img/card-4.jpg" alt="" class="card__image" />
           <h3 class="card__title">The blue marine discovery quest</h3>
-          <button class="card__button">Book now</button>
+          <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book now</button>
         </div>
         <!-- /.card -->
       </div>
@@ -637,10 +656,10 @@ trip - full day" class="card__image" />
       <div class="footer-wrapper">
         <a href="#" class="logo footer__logo"><img src="img/vertical-logo.svg" alt="Vertical logo" /></a>
         <div class="footer__list footer__categories">
-          <h3 class="footer__title ">ALL CATEGORIES</h3>
+          <h3 class="footer__title footer__title--mb-3 ">ALL CATEGORIES</h3>
           <ul class="footer__ul">
             <li class="footer__item">
-              <a href="#" class="footer__link footer__title--mb-3">All Deals</a>
+              <a href="#" class="footer__link">All Deals</a>
             </li>
             <li class="footer__item">
               <a href="#" class="footer__link">Hotels</a>
@@ -720,7 +739,7 @@ trip - full day" class="card__image" />
         </div>
         <!-- footer__list -->
         <div class="footer__contact-details">
-          <h3 class="footer-title footer__title--mb-3">Contact Details</h3>
+          <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
           <p class="footer__text">
             Feel free to contact us by phone, email or by our contact form
           </p>
@@ -738,12 +757,13 @@ trip - full day" class="card__image" />
                 <img class="footer__icon" src="img/phone-call-second.svg" alt="icon:call" />
               </div>
               <div class="footer__contacts-wrapper">
-                <span>Tel (business hours) : <a class="footer__tel-link" href="#">269 1500</a></span><br />
-                <span>Tel (hotline) Monday - Saturday: <a class="footer__tel-link" href="#"> 52-56-61-38</a> (08:00 am
+                <span>Tel (business hours) : <a class="footer__tel-link" href="tel:2691500">269 1500</a></span><br />
+                <span>Tel (hotline) Monday - Saturday: <a class="footer__tel-link" href="tel:52566138">
+                    52-56-61-38</a> (08:00 am
                   – 20:00
                   pm)</span><br />
-                <span>Tel (hotline) Sunday: <a class="footer__tel-link" href="#">52-56-61-38</a> (08:00 am – 14:00
-                  pm)</span>
+                <span>Tel (hotline) Sunday: <a class="footer__tel-link" href="tel:52566138">52-56-61-38</a> (08:00
+                  am–14:00pm)</span>
               </div>
             </div>
             <div class="footer__item footer__item--mb-2">
@@ -808,13 +828,14 @@ trip - full day" class="card__image" />
       </a>
       <h3 class="modal__title modal__title--mb-3">Booking</h3>
       <form action="send.php" method="POST" class="modal-form form">
-        <input type="text" class="input modal__input" placeholder="Your Full Name" name="name" required minlength="2" />
-        <input type="tel" class="input modal__input" placeholder="Your phone" name="tel" required />
-        <input type="email" class="input modal__input" placeholder="Your Email" name="email" required />
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required
+          minlength="2" />
+        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="tel" required />
+        <input type="email" class="input modal__input" placeholder="Your Email*" name="email" required />
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <div class="modal__button-wrapper">
           <button class="button modal__button" type="submit">Send</button>
-          <div class="modal-info">* Required Fields</div>
+          <div class="modal__info">*&nbsp; Required&nbsp; Fields</div>
         </div>
       </form>
     </div>
@@ -834,7 +855,7 @@ trip - full day" class="card__image" />
         <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required />
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <button class="button modal__button" type="submit">Send</button>
-        <div class="modal-info">* Required Fields</div>
+        <div class="modal-info">*&nbsp; Required&nbsp; Fields</div>
       </form>
     </div>
     <!-- /.modal__dialog -->
@@ -847,8 +868,6 @@ trip - full day" class="card__image" />
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=7f33a9d1-b965-4ffd-ac55-233f6e7f2c15&lang=ru_RU"> -->
-  </script>
 </body>
 
 </html>
