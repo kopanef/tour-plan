@@ -89,35 +89,56 @@ $(document).ready(function () {
 			messages: {
 				name: {
 					required: "Write your name",
-					minlength: "Name should contain more than one simbol",
+					minlength: "Write more than one simbol",
 				},
 				email: {
-					required: "We need your email address to contact you",
-					email: "Your email address must be in the format of name@domain.com",
+					required: "Email is required",
+					email: "Write like this: name@domain.com",
 				},
-				phone: {
-					required: "Write your phone",
+				tel: {
+					required: "Phone is required",
 				},
 			},
 		});
 	});
-	AOS.init();
 
-	$(".map__image").mouseover(function () {
+	$(".map__image").one("mouseover", () => {
+		$("#map").append('<iframe src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8974.191549155095!2d37.6641184781334!3d55.78380901859595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53585de4dc5e9%3A0x73a95baaa6869a53!2sHilton%20Garden%20Inn%20Moscow%20Krasnoselskaya!5e0!3m2!1sru!2sru!4v1595344884354!5m2!1sru!2sru" width = "100%" height = "100%" frameborder = "0" style = "border:0;" allowfullscreen = "" aria - hidden = "false" tabindex = "0" ></iframe>');
 		$(".map__image").addClass("map__image--dn");
-		let map;
-
-		function initMap() {
-			var opt = {
-				center: {
-					lat: 41.011845,
-					lng: 39.615020
-				},
-				zoom: 8
-			}
-			map = new google.maps.Map(document.getElementById("map"), opt);
-		}
-		initMap();
 	});
-	AOS.init();
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $(".map__image").mouseover(function () {
+// 	$(".map__image").addClass("map__image--dn");
+// 	let map;
+
+// 	function initMap() {
+// 		var opt = {
+// 			center: {
+// 				lat: 41.011845,
+// 				lng: 39.615020
+// 			},
+// 			zoom: 8
+// 		}
+// 		map = new google.maps.Map(document.getElementById("map"), opt);
+// 	}
+// 	initMap();
+// });
+// AOS.init();
+//
